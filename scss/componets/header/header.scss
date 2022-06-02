@@ -1,0 +1,62 @@
+.header{
+  padding: 18px 0;
+  font-family: $font-Quicksand;
+  font-size:   $font-sm;
+  line-height: 15px;
+  border-bottom: 1px solid #D8E3FE;
+
+  &__navigation{
+	gap: 72px;
+	&-logo{
+	  a{
+		display: inline-block;
+		width: 26px;
+		height: 26px;
+		background: $accent-color;
+		border-radius: 50%;
+	  }
+	  &:hover{
+		transform: scale(1.2);
+		transition: 0.3s;
+	  }
+	}
+	nav{
+	  ul{
+		gap: 42px;
+	  a{
+		font-weight: 500;
+		&.active{
+		  font-weight: 700;
+		  color: $accent-color;
+		}
+		&:hover{
+		  transition: 0.3s;
+		  color: $accent-color;
+		}
+	  }
+	  }
+	}
+  }
+  &__social{
+	justify-content: flex-end;
+	gap: 44px;
+	&-icons{
+	  ul{
+		gap: 38px;
+	  }
+	}
+	&-cta{
+	  a{
+		display: inline-block;
+		background: #D2E1FF;
+		border-radius: 2px;
+		padding: 13px 21px;
+		color: #3A79FF;
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		font-size: $font-btc-cta;
+		font-weight: 700;
+		line-height: 16px;
+	  }
+	}
+  }
+}
