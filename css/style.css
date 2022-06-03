@@ -1,19 +1,285 @@
-/* Error: expected ":".
- *   ,
- * 6 | $font-
- *   |       ^
- *   '
- *   scss\common\variables.scss 6:7  @import
- *   scss\common\index.scss 3:9      @import
- *   scss\index.scss 1:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ":".\a   \2577 \a 6 \2502  $font-\d\a   \2502        ^\a   \2575 \a   scss\\common\\variables.scss 6:7  @import\a   scss\\common\\index.scss 3:9      @import\a   scss\\index.scss 1:9             root stylesheet';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+ul,
+ol,
+li {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Bold"), local("Quicksand-Bold"), url("/assets/fonts/Quicksand-Bold.woff2") format("woff2"), url("/assets/fonts/Quicksand-Bold.woff") format("woff"), url("/assets/fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("/assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("/assets/fonts/OpenSans-Bold.woff") format("woff"), url("/assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("/assets/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("/assets/fonts/OpenSans-SemiBold.woff") format("woff"), url("/assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Medium"), local("Quicksand-Medium"), url("/assets/fonts/Quicksand-Medium.woff2") format("woff2"), url("/assets/fonts/Quicksand-Medium.woff") format("woff"), url("/assets/fonts/Quicksand-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url("/assets/fonts/Quicksand-Regular.woff2") format("woff2"), url("/assets/fonts/Quicksand-Regular.woff") format("woff"), url("/assets/fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("/assets/fonts/Roboto-Medium.woff2") format("woff2"), url("/assets/fonts/Roboto-Medium.woff") format("woff"), url("/assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"), url("/assets/fonts/Roboto-Regular.woff2") format("woff2"), url("/assets/fonts/Roboto-Regular.woff") format("woff"), url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Roboto", sant-serif;
+  font-weight: 400;
+}
+
+.container-lg,
+.container-md {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-lg {
+  max-width: 1235px;
+}
+
+.container-md {
+  max-width: 920px;
+}
+
+a {
+  color: #8D96BD;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.col {
+  width: 100%;
+}
+
+.header {
+  padding: 18px 0;
+  font-family: "Quicksand", sant-serif;
+  font-size: 12px;
+  line-height: 15px;
+  border-bottom: 1px solid #D8E3FE;
+}
+.header__navigation {
+  gap: 72px;
+}
+.header__navigation-logo a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: #5E81FE;
+  border-radius: 50%;
+}
+.header__navigation-logo:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.header__navigation nav ul {
+  gap: 42px;
+}
+.header__navigation nav ul a {
+  font-weight: 500;
+}
+.header__navigation nav ul a.active {
+  font-weight: 700;
+  color: #5E81FE;
+}
+.header__navigation nav ul a:hover {
+  transition: 0.3s;
+  color: #5E81FE;
+}
+.header__social {
+  justify-content: flex-end;
+  gap: 44px;
+}
+.header__social-icons ul {
+  gap: 38px;
+}
+.header__social-cta a {
+  display: inline-block;
+  background: #D2E1FF;
+  border-radius: 2px;
+  padding: 13px 21px;
+  color: #3A79FF;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.header .media-menu-btn {
+  display: none;
+}
+@media (min-width: 875px) {
+  .header [for=media-menu-btn],
+.header .hidden-desktop {
+    display: none;
+  }
+}
+@media (max-width: 875px) {
+  .header {
+    position: relative;
+    min-height: 83px;
+  }
+  .header [for=media-menu-btn] {
+    background: #D2E1FF;
+    border-radius: 2px;
+    padding: 13px 21px;
+    color: #3A79FF;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  .header [for=media-menu-btn]:active {
+    color: white;
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    transition: 0.3s;
+  }
+  .header__navigation {
+    gap: 30px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .header__navigation nav {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 83px;
+    left: 0;
+    background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  }
+  .header__navigation nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .header__navigation nav ul a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  .header__navigation nav ul a:hover {
+    color: white;
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    transition: 0.3s;
+  }
+  .header .media-menu-btn:checked + nav {
+    display: initial;
+  }
+  .header__social-cta {
+    display: none;
+  }
+}
+@media (max-width: 370px) {
+  .header__social-icons ul {
+    gap: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

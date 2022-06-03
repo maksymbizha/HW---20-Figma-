@@ -1,16 +1,25 @@
 $container-lg-width: 1235px;
 $container-md-width: 920px;
 
+
 $font-Roboto: 'Roboto', sant-serif;
 $font-Quicksand: 'Quicksand',sant-serif;
-$font-
+$font-OpenSans: 'Open Sans',sant-serif;
 
 $font-sm: 12px;
 $font-btc-cta: 13px;
 
-$accent-color: #5E81FE;
+$accent-color: #D2E1FF;
+$accent-color-light: #5E81FE;
+$accent-color-medium: #3A79FF;
+$accent-color-bold: #4C85FF;
 
+$bg-dark-gradient: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+$bg-light-gradient: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
 
 $font-color-light: #D6DAE5;
 $font-color-medium: #8D96BD;
 $font-color-bold: #697CA6;
+
+
+$header-height: 83px;
