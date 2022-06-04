@@ -4,9 +4,20 @@
   font-size:   $font-sm;
   line-height: 15px;
   border-bottom: 1px solid #D8E3FE;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 99;
+
+  &__wrapper{
+	padding: 18px 0;
+  }
 
   &__navigation{
 	gap: 72px;
+
 	&-logo{
 	  a{
 		display: inline-block;
@@ -15,6 +26,7 @@
 		background: $accent-color-light;
 		border-radius: 50%;
 	  }
+
 	  &:hover{
 		transform: scale(1.2);
 		transition: 0.3s;
@@ -23,28 +35,31 @@
 	nav{
 	  ul{
 		gap: 42px;
-	  a{
-		font-weight: 500;
-		&.active{
-		  font-weight: 700;
-		  color: $accent-color-light;
+		a{
+		  font-weight: 500;
+
+		  &.active{
+			font-weight: 700;
+			color: $accent-color-light;
+		  }
+		  &:hover{
+			transition: 0.3s;
+			color: $accent-color-light;
+		  }
 		}
-		&:hover{
-		  transition: 0.3s;
-		  color: $accent-color-light;
-		}
-	  }
 	  }
 	}
   }
   &__social{
 	justify-content: flex-end;
 	gap: 44px;
+
 	&-icons{
 	  ul{
 		gap: 38px;
 	  }
 	}
+
 	&-cta{
 	  a{
 		display: inline-block;

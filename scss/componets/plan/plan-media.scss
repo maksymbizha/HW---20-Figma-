@@ -1,0 +1,52 @@
+.plan{
+
+  @media (max-width: 1170px) {
+	&__img{
+	  width: 50%;
+	  margin-top: -30px;
+
+	  img{
+		max-width: 100%;
+	  }
+	}
+  }
+
+  @media (max-width: 920px){
+	&{
+	  padding-top: 100px;
+	}
+
+	 .row{
+	  display: initial;
+	}
+
+	&__content{
+	  width: 100%;
+	  text-align: center;
+	}
+
+	&__btn{
+	  justify-content: center;
+	  margin-bottom: 30px;
+	}
+
+	&__img{
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+  @media (max-width: 400px){
+	&__title{
+	  font-size: 29px;
+	}
+
+	&__btn{
+	  display: initial;
+	  &-light,
+	  &-riad{
+		width: 100%;
+	  }
+	}
+  }
+}

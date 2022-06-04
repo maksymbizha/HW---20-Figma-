@@ -1,4 +1,5 @@
 .header{
+
   .media-menu-btn{
 	display: none;
   }
@@ -8,13 +9,15 @@
 	.hidden-desktop{
 	  display: none;
 	}
-
   }
 
   @media (max-width: 875px) {
 	&{
-	  position: relative;
 	  min-height: $header-height;
+	}
+
+	&__wrapper{
+	  position: relative;
 	}
 
 	& [for="media-menu-btn"]{
@@ -26,6 +29,7 @@
 	  font-weight: 700;
 	  line-height: 16px;
 	  text-transform: uppercase;
+
 	  &:active{
 		color: white;
 		background: $bg-dark-gradient;
@@ -45,6 +49,8 @@
 		top: $header-height;
 		left: 0;
 		background: $bg-light-gradient;
+		z-index: 100;
+		box-shadow: 0 13px 14px -11px #0000009e;
 
 		ul{
 		  flex-direction: column;
@@ -76,7 +82,12 @@
 	  display: none;
 	}
   }
+
   @media (max-width: 370px){
+	&__navigation{
+	  gap: 20px;
+	}
+
 	&__social-icons ul {
 	  gap: 25px;
 	}
