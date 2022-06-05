@@ -117,7 +117,7 @@ select {
   font-style: normal;
   font-display: swap;
 }
-.banner:before, .banner:after {
+.about__wrapper-bg:after, .banner:before, .banner:after {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -546,6 +546,198 @@ main {
   .plan__btn-light, .plan__btn-riad {
     width: 100%;
   }
+}
+
+.about__wrapper-bg:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/icons/about-clouds.svg");
+  background-color: #E1EAFF;
+  box-shadow: 0 5px 45px rgba(151, 175, 227, 0.1);
+}
+.about .container-md {
+  margin-top: -25%;
+  padding-bottom: 15%;
+}
+.about__title {
+  text-align: center;
+}
+.about__title h2 {
+  font-family: "Quicksand", sant-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3D4F9F;
+  margin-bottom: 90px;
+}
+.about__subtitle {
+  font-family: "Roboto", sant-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D4F9F;
+  margin-bottom: 20px;
+}
+.about__content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.about__content-item {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+}
+.about__content-item .item-svg {
+  width: 69px;
+  height: 69px;
+  background: #F1F5FF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__content-item h3 {
+  color: #4074F8;
+  font-family: "Open Sans", sant-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+}
+.about__content-item p {
+  font-family: "Open Sans", sant-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 19px;
+  text-align: center;
+  color: #ADB3CB;
+}
+.about__btn {
+  display: flex;
+  justify-content: space-around;
+}
+.about__btn .btn-red,
+.about__btn .btn-blue {
+  width: 30%;
+}
+.about__btn .btn-red a,
+.about__btn .btn-blue a {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  font-family: "Quicksand", sant-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 2px;
+}
+.about__btn .btn-red a {
+  color: #D43F3F;
+  background: #FFD7D7;
+}
+.about__btn .btn-blue a {
+  color: #3A79FF;
+  background: #D2E1FF;
+}
+.about .no-btn {
+  padding: 10px 30px;
+}
+.about .no-btn:before,
+.about .no-btn:after {
+  content: "";
+  border: 1px solid #DAE4FE;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .about__content-item {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .about__btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .about__btn .btn-red,
+.about__btn .btn-blue {
+    width: 100%;
+  }
+}
+
+.analytics {
+  overflow-x: hidden;
+  padding-bottom: 55px;
+  background: #F5F8FF;
+}
+.analytics__bloc-left {
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  height: 342px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+  margin-left: -50%;
+  padding-right: 90px;
+}
+.analytics__bloc-left h3 {
+  font-family: "Quicksand", sant-serif;
+  font-size: 48px;
+  line-height: 83px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.analytics__bloc-left p {
+  font-family: "Quicksand", sant-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.analytics__bloc-right {
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  height: 342px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-right: -50%;
+  padding-left: 90px;
+}
+.analytics__bloc-right h3 {
+  font-family: "Quicksand", sant-serif;
+  font-size: 48px;
+  line-height: 83px;
+  letter-spacing: 0.03em;
+  color: #5E80FF;
+}
+.analytics__bloc-right p {
+  font-family: "Quicksand", sant-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #5E80FF;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+.about{
+  @media (max-width: 576px) {
+	&__content{
+	  flex-direction: column;
+	  align-items: center;
+	  gap: 40px;
+	}
+	&__content-item {
+	  width: 100%;
+	}
+  }
+  @media (max-width: 400px) {
+	&__btn{
+	  flex-direction: column;
+	  align-items: center;
+	  gap: 40px;
+	  .btn-red,
+	  .btn-blue{
+		width: 100%;
+	  }
+	}
+  }
+}
