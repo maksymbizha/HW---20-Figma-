@@ -1,0 +1,45 @@
+.strategy{
+  @media (max-width: 900px) {
+	&__content{
+	  flex-direction: column;
+	  padding-bottom: 50px;
+
+	  &-img,
+	  &-wrapper {
+		width: 100%;
+	  }
+
+	  img{
+		height: initial;
+		width: 100%;
+	  }
+
+	  &-wrapper{
+		text-align: center;
+		p{
+		  width: 100%;
+		}
+	  }
+
+	  &-service{
+		gap: 0;
+		justify-content: center;
+		p{
+		  width: 50%;
+		}
+	  }
+	}
+  }
+  @media (max-width: 400px){
+	&__content-service{
+	  flex-direction: column;
+	  align-items: center;
+	  &-btn{
+		width: 100%;
+	  }
+	  p{
+		text-align: center;
+	  }
+	}
+  }
+}

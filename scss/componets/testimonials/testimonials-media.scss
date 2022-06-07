@@ -1,0 +1,38 @@
+.testimonials{
+  @media (max-width: 920px) {
+	.row{
+	  flex-direction: column;
+	}
+	&__content:after{
+	  display: none;
+	}
+	&__content,
+	&__title{
+	  width: 100%;
+	  text-align: center;
+	}
+	&__title{
+	  margin-bottom: 30px;
+	  p{
+		width: 100%;
+	  }
+	}
+	&__content{
+	  &-img{
+		margin-top: -4%;
+	  }
+	}
+  }
+  @media (max-width: 520px){
+	&__content{
+	  &-box{
+		p{
+		  padding: 40px 15px 50px 15px;
+		}
+	  }
+	  &-img{
+		margin-top: -8%;
+	  }
+	}
+  }
+}

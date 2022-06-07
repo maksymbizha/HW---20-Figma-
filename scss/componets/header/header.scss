@@ -64,13 +64,20 @@
 	  a{
 		display: inline-block;
 		background: $accent-color;
-		border-radius: 2px;
+		border: 2px $accent-color-medium;
 		padding: 13px 21px;
 		color: $accent-color-medium;
 		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 		font-size: $font-btc-cta;
 		font-weight: 700;
 		line-height: 16px;
+	  }
+	  a:hover{
+		padding: 11px 19px;
+		color: #5E80FF;
+		background-color: #F6F9FF;
+		border: 2px #5E80FF solid;
+		transition: 0.3s;
 	  }
 	}
   }

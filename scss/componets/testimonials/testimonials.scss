@@ -1,0 +1,98 @@
+.testimonials{
+  overflow-x: hidden;
+  padding: 110px 0;
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+
+  &__title{
+	width: 50%;
+	h2{
+	  font-family: $font-Roboto;
+	  font-weight: 500;
+	  font-size: $font-xs;
+	  line-height: 12px;
+	  letter-spacing: 0.1em;
+	  text-transform: uppercase;
+	  color: #3D4F9F;
+	  margin-bottom: 30px;
+	}
+	h3{
+	  font-family: $font-Quicksand;
+	  font-weight: 500;
+	  font-size: 36px;
+	  line-height: 45px;
+	  color: #3D4F9F;
+	  margin-bottom: 15px;
+	}
+	p{
+	  font-family: $font-OpenSans;
+	  font-weight: 600;
+	  font-size: $font-sm;
+	  line-height: 23px;
+	  letter-spacing: 0.03em;
+	  color: #A4ABC8;
+	  width: 75%;
+	}
+  }
+  &__content{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	&-box{
+	  background: #FFFFFF;
+	  border: 1px solid #D8E3FE;
+	  box-shadow: 0 5px 50px #F3F5FA;
+	  p{
+		font-family: $font-Roboto;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		color: #676F95;
+		max-width: 501px;
+		padding: 40px 70px 50px 70px;
+	  }
+	}
+	&-img{
+	  margin-top: -7%;
+	}
+  }
+  &__controls{
+	margin-top: 50px;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+
+	&-item {
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 50%;
+	  background-color: #8D96BD;
+
+	  &:hover,
+	  &-active {
+		background-color: $accent-color-bold;
+		transition: 0.3s;
+		cursor: pointer;
+	  }
+	}
+  }
+  &__content:after{
+	content: 'Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.';
+	display: block;
+	font-family: $font-Roboto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 27px;
+	letter-spacing: 0.03em;
+	padding: 27px 50px 27px 70px;
+	color: #8D96BD;
+	margin-top: -57%;
+	margin-right: -230%;
+	background: #FFFFFF;
+	border: 1px solid #D8E3FE;
+	box-shadow: 0 5px 50px #f3f5fa;
+	max-width: 400px;
+  }
+}

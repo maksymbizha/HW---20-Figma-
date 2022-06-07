@@ -59,13 +59,23 @@
 	  justify-content: center;
 	  align-items: center;
 	}
+	.item-svg:hover{
+	  background: #FFFFFF;
+	  border: #3A79FF 1px solid;
+	  transition: 0.3s;
+	  cursor: pointer;
+	}
 	h3{
 	  color: #4074F8;
 	  font-family: $font-OpenSans;
 	  font-weight: 700;
 	  font-size: 14px;
 	  line-height: 25px;
-
+	}
+	h3:hover{
+	  transition: 0.3s;
+	  text-transform: uppercase;
+	  cursor: pointer;
 	}
 	p{
 	  font-family: $font-OpenSans;
@@ -100,11 +110,25 @@
 		color: #D43F3F;
 		background: #FFD7D7;
 	  }
+	  a:hover{
+		padding: 13px 0;
+		color: #ff0e59;
+		background-color: #FFFFFF;
+		border: 2px #ff0e59 solid;
+		transition: 0.3s;
+	  }
 	}
 	.btn-blue{
 	  a{
 		color: #3A79FF;
 		background: #D2E1FF;
+	  }
+	  a:hover{
+		padding: 13px 0;
+		color: #5E80FF;
+		background-color: #F6F9FF;
+		border: 2px #5E80FF solid;
+		transition: 0.3s;
 	  }
 	}
   }

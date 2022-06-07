@@ -1,0 +1,14 @@
+.help{
+  @media (max-width: 735px) {
+	.help__item-active-wrapper-btn{
+		flex-direction: column;
+	  }
+	}
+  @media (max-width: 400px){
+	.help__item-active-wrapper-btn{
+	  a{
+		width: 100%;
+	  }
+	}
+  }
+}

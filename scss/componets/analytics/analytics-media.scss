@@ -1,0 +1,23 @@
+.analytics{
+  @media (max-width: 810px){
+	& .row{
+	  display: initial;
+	}
+	&__bloc-left{
+	  padding: 0;
+	  width: 110%;
+	  margin-left: -5%;
+	  align-items: center;
+	}
+	& p{
+	  width: 90%;
+	  text-align: center;
+	}
+	&__bloc-right{
+	  padding: 0;
+	  width: 110%;
+	  margin-left: -5%;
+	  align-items: center;
+	}
+  }
+}

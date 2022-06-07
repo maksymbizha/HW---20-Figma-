@@ -1,0 +1,16 @@
+.email{
+  @media (max-width: 970px) {
+	.row{
+	  flex-direction: column;
+	  gap: 40px;
+	}
+	&__title,
+	&__form{
+	  width: 100%;
+	}
+	label{
+	  width: 100%;
+	}
+
+  }
+}
