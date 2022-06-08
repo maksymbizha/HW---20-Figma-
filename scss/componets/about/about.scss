@@ -58,7 +58,12 @@
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
+	  i{
+		font-size: 25px;
+		color: #4C85FF;
+	  }
 	}
+
 	.item-svg:hover{
 	  background: #FFFFFF;
 	  border: #3A79FF 1px solid;
@@ -71,11 +76,6 @@
 	  font-weight: 700;
 	  font-size: 14px;
 	  line-height: 25px;
-	}
-	h3:hover{
-	  transition: 0.3s;
-	  text-transform: uppercase;
-	  cursor: pointer;
 	}
 	p{
 	  font-family: $font-OpenSans;

@@ -1,0 +1,11 @@
+.footer{
+  @media (max-width: 970px) {
+	.row{
+	  display: none;
+	}
+	&__copyright{
+	  text-align: center;
+	  margin: 0;
+	}
+  }
+}

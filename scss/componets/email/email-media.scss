@@ -8,8 +8,26 @@
 	&__form{
 	  width: 100%;
 	}
+	&__title{
+	  text-align: center;
+	  p{
+		width: 100%;
+	  }
+	}
 	label{
 	  width: 100%;
+	  justify-content: center;
+	}
+  }
+  @media (max-width: 500px){
+	&__form{
+	  label{
+		flex-direction: column;
+	  }
+	  &-btn,
+	  &-submit{
+		width: 100%;
+	  }
 	}
 
   }

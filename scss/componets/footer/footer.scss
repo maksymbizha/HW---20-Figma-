@@ -1,20 +1,5 @@
-.header{
-  padding: 18px 0;
-  font-family: $font-Quicksand;
-  font-size:   $font-sm;
-  line-height: 15px;
-  border-bottom: 1px solid #D8E3FE;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #FFFFFF;
-  z-index: 99;
-
-  &__wrapper{
-	padding: 18px 0;
-  }
-
+.footer{
+  margin: 90px 0;
   &__navigation{
 	gap: 72px;
 
@@ -85,6 +70,19 @@
 		border: 2px #5E80FF solid;
 		transition: 0.3s;
 	  }
+	}
+  }
+  &__copyright{
+	width: 100%;
+	margin: 20px 0 0 40px;
+	p{
+	  font-family: $font-Quicksand;
+	  font-weight: 500;
+	  font-size: $font-ms;
+	  line-height: 15px;
+	  letter-spacing: 0.05em;
+	  text-transform: capitalize;
+	  color: #AEB8D0;
 	}
   }
 }
