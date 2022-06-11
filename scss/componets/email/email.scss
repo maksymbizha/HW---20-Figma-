@@ -27,9 +27,9 @@
 	  width: 100%;
 	  display: flex;
 	  gap: 10px;
+	  justify-content: flex-end;
 	}
 	&-btn{
-	  //width: 60%;
 	  color: #7A85AD;
 	  background: #EFEFF7;
 	  border-radius: 5px;
@@ -40,7 +40,6 @@
 	  width: 270px;
 	}
 	&-submit{
-	  //width: 30%;
 	  color: #FFFFFF;
 	  background: #4D6CE1;
 	  box-shadow: 0 5px 15px rgba(116, 104, 255, 0.2);
@@ -55,8 +54,6 @@
 	  padding: 23px 20px;
 	  color: #4D6CE1;
 	  background-color: #FFFFFF;
-
 	}
-
   }
 }

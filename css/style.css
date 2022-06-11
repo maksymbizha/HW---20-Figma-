@@ -117,7 +117,7 @@ select {
   font-style: normal;
   font-display: swap;
 }
-.about__wrapper-bg:after, .banner:before, .banner:after {
+.about, .banner:before, .banner:after {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -588,18 +588,12 @@ main {
   }
 }
 
-.about__wrapper-bg:after {
-  content: " ";
-  display: block;
+.about {
+  padding: 140px 0 170px 0;
   height: 100%;
   width: 100%;
-  background-image: url("/assets/icons/about-clouds.svg");
-  background-color: #E1EAFF;
+  background-image: url("/assets/icons/about-bg-clouds.svg");
   box-shadow: 0 5px 45px rgba(151, 175, 227, 0.1);
-}
-.about .container-md {
-  margin-top: -25%;
-  padding-bottom: 15%;
 }
 .about__title {
   text-align: center;
@@ -662,6 +656,15 @@ main {
   font-size: 14px;
   line-height: 25px;
 }
+.about__content-item .before:before {
+  content: " ";
+  border: 1px solid #DAE4FE;
+  display: block;
+  width: 35px;
+  position: relative;
+  right: 90px;
+  top: 30px;
+}
 .about__content-item p {
   font-family: "Open Sans", sant-serif;
   font-weight: 600;
@@ -672,17 +675,18 @@ main {
 }
 .about__btn {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 70px;
 }
 .about__btn .btn-red,
 .about__btn .btn-blue {
-  width: 30%;
+  width: 20%;
 }
 .about__btn .btn-red a,
 .about__btn .btn-blue a {
   display: inline-block;
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
   font-family: "Quicksand", sant-serif;
   font-weight: 700;
   font-size: 13px;
@@ -695,7 +699,7 @@ main {
   background: #FFD7D7;
 }
 .about__btn .btn-red a:hover {
-  padding: 13px 0;
+  padding: 18px 0;
   color: #ff0e59;
   background-color: #FFFFFF;
   border: 2px #ff0e59 solid;
@@ -706,7 +710,7 @@ main {
   background: #D2E1FF;
 }
 .about__btn .btn-blue a:hover {
-  padding: 13px 0;
+  padding: 18px 0;
   color: #5E80FF;
   background-color: #F6F9FF;
   border: 2px #5E80FF solid;
@@ -714,33 +718,63 @@ main {
 }
 .about .no-btn {
   padding: 10px 30px;
+  color: #D6DAE5;
 }
-.about .no-btn:before,
 .about .no-btn:after {
-  content: "";
-  border: 1px solid #DAE4FE;
+  content: " ";
+  border: 1px solid #D6DAE5;
   display: block;
-  width: 100%;
+  width: 20px;
+  position: relative;
+  bottom: 10px;
+  right: 45px;
+}
+.about .no-btn:before {
+  content: " ";
+  border: 1px solid #D6DAE5;
+  display: block;
+  width: 20px;
+  position: relative;
+  top: 15px;
+  left: 53px;
 }
 
+@media (max-width: 940px) {
+  .about__btn {
+    gap: 40px;
+  }
+  .about .btn-red,
+.about .btn-blue {
+    width: 25%;
+  }
+}
+@media (max-width: 760px) {
+  .about .btn-red,
+.about .btn-blue {
+    width: 30%;
+  }
+}
 @media (max-width: 576px) {
   .about__content {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
-  .about__content-item {
-    width: 100%;
+  .about .btn-red,
+.about .btn-blue {
+    width: 35%;
   }
-}
-@media (max-width: 400px) {
   .about__btn {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-  .about__btn .btn-red,
-.about__btn .btn-blue {
+}
+@media (max-width: 440px) {
+  .about__content-item {
+    width: 100%;
+  }
+  .about .btn-red,
+.about .btn-blue {
     width: 100%;
   }
 }
@@ -871,10 +905,27 @@ main {
   margin-bottom: 100px;
 }
 .strategy__content-img {
-  width: 50%;
+  width: 100%;
+  display: flex;
 }
-.strategy__content-img img {
-  height: 390px;
+.strategy__content-img .img-big-1 {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.strategy__content-img .img-small-2 {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 0;
+  right: 140px;
+}
+.strategy__content-img .img-small-3 {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 139px;
+  right: 139px;
 }
 .strategy__content-wrapper {
   width: 50%;
@@ -1145,6 +1196,7 @@ main {
   border-bottom: 1px solid #D8E3FE;
   gap: 40px;
   padding: 15px 0;
+  align-items: center;
 }
 .help__wrapper .help__item-active {
   border-bottom: 1px solid #D8E3FE;
@@ -1310,6 +1362,7 @@ main {
   width: 100%;
   display: flex;
   gap: 10px;
+  justify-content: flex-end;
 }
 .email__form-btn {
   color: #7A85AD;

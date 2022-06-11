@@ -1,19 +1,10 @@
 .about{
-  &__wrapper-bg:after{
-	@extend %bg-default;
-	content: ' ';
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-image: url("/assets/icons/about-clouds.svg");
-	background-color:  #E1EAFF;
-	box-shadow: 0 5px 45px rgba(151, 175, 227, 0.1);
-  }
-
-  & .container-md{
-	margin-top: -25%;
-	padding-bottom: 15%;
-  }
+  padding: 140px 0 170px 0;
+  @extend %bg-default;
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/icons/about-bg-clouds.svg");
+  box-shadow: 0 5px 45px rgba(151, 175, 227, 0.1);
 
   &__title{
 	text-align: center;
@@ -35,8 +26,8 @@
    text-transform: uppercase;
    color: #3D4F9F;
    margin-bottom: 20px;
-
  }
+
   &__content{
 	display: flex;
 	align-items: start;
@@ -50,6 +41,7 @@
 	gap: 28px;
 	justify-content: center;
 	align-items: center;
+
 	.item-svg{
 	  width: 69px;
 	  height: 69px;
@@ -58,6 +50,7 @@
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
+
 	  i{
 		font-size: 25px;
 		color: #4C85FF;
@@ -77,6 +70,15 @@
 	  font-size: 14px;
 	  line-height: 25px;
 	}
+	.before:before {
+	  content: ' ';
+	  border: 1px solid #DAE4FE;
+	  display: block;
+	  width: 35px;
+	  position: relative;
+	  right: 90px;
+	  top: 30px;
+	}
 	p{
 	  font-family: $font-OpenSans;
 	  font-weight: 600;
@@ -88,15 +90,16 @@
   }
   &__btn{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 70px;
 
 	.btn-red,
 	.btn-blue{
-	  width: 30%;
+	  width: 20%;
 	  a{
 		display: inline-block;
 		width: 100%;
-		padding: 15px 0;
+		padding: 20px 0;
 		font-family: $font-Quicksand;
 		font-weight: 700;
 		font-size: $font-btc-cta;
@@ -111,7 +114,7 @@
 		background: #FFD7D7;
 	  }
 	  a:hover{
-		padding: 13px 0;
+		padding: 18px 0;
 		color: #ff0e59;
 		background-color: #FFFFFF;
 		border: 2px #ff0e59 solid;
@@ -124,7 +127,7 @@
 		background: #D2E1FF;
 	  }
 	  a:hover{
-		padding: 13px 0;
+		padding: 18px 0;
 		color: #5E80FF;
 		background-color: #F6F9FF;
 		border: 2px #5E80FF solid;
@@ -134,14 +137,24 @@
   }
   .no-btn{
 	padding: 10px 30px;
+	color: #D6DAE5;
   }
-  .no-btn:before,
   .no-btn:after{
-	content: '';
-	border: 1px solid #DAE4FE;
+	content: ' ';
+	border: 1px solid #D6DAE5;
 	display: block;
-	width: 100%;
-
-
+	width: 20px;
+	position: relative;
+	bottom: 10px;
+	right: 45px;
+  }
+  .no-btn:before {
+	content: ' ';
+	border: 1px solid #D6DAE5;
+	display: block;
+	width: 20px;
+	position: relative;
+	top: 15px;
+	left: 53px;
   }
 }
