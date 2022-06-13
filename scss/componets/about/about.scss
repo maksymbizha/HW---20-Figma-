@@ -5,6 +5,7 @@
   width: 100%;
   background-image: url("/assets/icons/about-bg-clouds.svg");
   box-shadow: 0 5px 45px rgba(151, 175, 227, 0.1);
+  background-size: contain;
 
   &__title{
 	text-align: center;

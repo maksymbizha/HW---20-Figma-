@@ -365,11 +365,11 @@ main {
   width: 100%;
 }
 .banner:before {
-  background-image: url("/assets/icons/clouds.svg");
+  background-image: url("/assets/icons/banner-bg-1.svg");
   z-index: 1;
 }
 .banner:after {
-  background-image: url("/assets/icons/one of stats.svg");
+  background-image: url("/assets/icons/banner-bg-2.svg");
   z-index: 0;
 }
 .banner__title-wrapper {
@@ -594,6 +594,7 @@ main {
   width: 100%;
   background-image: url("/assets/icons/about-bg-clouds.svg");
   box-shadow: 0 5px 45px rgba(151, 175, 227, 0.1);
+  background-size: contain;
 }
 .about__title {
   text-align: center;
@@ -903,33 +904,42 @@ main {
   border: 1px solid #D8E3FE;
   box-shadow: 0 15px 50px #EFF4FF;
   margin-bottom: 100px;
+  padding: 60px 30px;
 }
 .strategy__content-img {
-  width: 100%;
+  width: 50%;
+  justify-content: space-between;
+}
+.strategy__content-img .img-wrapper-big {
+  width: 65%;
+}
+.strategy__content-img .img-wrapper-small {
   display: flex;
+  flex-direction: column;
+  width: 31%;
+  gap: 13px;
 }
 .strategy__content-img .img-big-1 {
+  display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: relative;
 }
 .strategy__content-img .img-small-2 {
+  display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: relative;
-  bottom: 0;
-  right: 140px;
 }
 .strategy__content-img .img-small-3 {
+  display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: relative;
-  bottom: 139px;
-  right: 139px;
 }
 .strategy__content-wrapper {
   width: 50%;
-  margin-top: 55px;
+  padding-left: 15px;
 }
 .strategy__content-wrapper h4 {
   font-family: "Quicksand", sant-serif;
@@ -1003,9 +1013,8 @@ main {
   .strategy__content-img, .strategy__content-wrapper {
     width: 100%;
   }
-  .strategy__content img {
-    height: initial;
-    width: 100%;
+  .strategy__content .img-wrapper-small {
+    gap: 7px;
   }
   .strategy__content-wrapper {
     text-align: center;

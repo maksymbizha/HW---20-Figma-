@@ -32,36 +32,49 @@
 	border: 1px solid #D8E3FE;
 	box-shadow: 0 15px 50px #EFF4FF;
 	margin-bottom: 100px;
+	padding: 60px 30px;
 
 	&-img {
-	  width: 100%;
-	  display: flex;
+	  width: 50%;
+	  justify-content: space-between;
+
+	  .img-wrapper-big{
+		width: 65%;
+	  }
+
+	  .img-wrapper-small{
+		display: flex;
+		flex-direction: column;
+		width: 31%;
+		gap: 13px;
+	  }
 
 	  .img-big-1 {
+		display: block;
 		width: 100%;
+		height: 100%;
 		object-fit: cover;
-		position: relative;
 	  }
 
 	  .img-small-2 {
+		display: block;
 		width: 100%;
+		height: 100%;
 		object-fit: cover;
-		position: relative;
-		bottom: 0;
-		right: 140px;
 	  }
 
 	  .img-small-3 {
+		display: block;
 		width: 100%;
+		height: 100%;
 		object-fit: cover;
-		position: relative;
-		bottom: 139px;
-		right: 139px;
 	  }
 	}
+
 	&-wrapper {
 	  width: 50%;
-	  margin-top: 55px;
+	  padding-left: 15px;
+
 
 	  h4{
 		font-family: $font-Quicksand;
